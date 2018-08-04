@@ -4,7 +4,7 @@ $("document").ready(function () {
     console.log("scroll " + scrollY);
     console.log("footer " + footerY);
     var animate = function () {
-        var scrollY = $(window).scrollTop() + 432;
+        var scrollY = $(window).scrollTop() + 650;
         console.log("scroll " + scrollY);
         if (scrollY > footerY) {
             $('#copyright').animate({
