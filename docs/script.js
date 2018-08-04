@@ -1,4 +1,35 @@
 var footerY = $('footer').offset().top;
+var aboutY = $('#about-section').offset().top;
+
+$("document").ready(function () {
+    console.log("scroll " + scrollY);
+    console.log("about " + aboutY);
+    var animate = function () {
+        var scrollY = $(window).scrollTop() + 650;
+        console.log("scroll " + scrollY);
+        if (scrollY > aboutY) {
+            $('.about-header h2').animate({
+                opacity: "1",
+                bottom: "10px"
+            }, 500);
+            $('.about').delay(200).animate({
+                opacity: "1",
+                bottom: "10px"
+            }, 500);
+            $('#get-in-touch').delay(400).animate({
+                opacity: "1",
+                bottom: "10px"
+            }, 500);
+        }
+    };
+
+    animate();
+
+    $(window).scroll(function () {
+        animate();
+    });
+});
+
 
 $("document").ready(function () {
     console.log("scroll " + scrollY);
@@ -35,6 +66,7 @@ $("document").ready(function () {
         animate();
     });
 });
+
 
 $("document").ready(function () {
     $('#go-to-top').click(function () {
