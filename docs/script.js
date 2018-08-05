@@ -8,11 +8,11 @@ $("document").ready(function () {
         var scrollY = $(window).scrollTop() + 650;
         console.log("scroll " + scrollY);
         if (scrollY > aboutY) {
-            $('.about-header h2').animate({
+            $('#about-header h2').animate({
                 opacity: "1",
                 bottom: "10px"
             }, 500);
-            $('.about').delay(200).animate({
+            $('#about-content').delay(200).animate({
                 opacity: "1",
                 bottom: "10px"
             }, 500);
