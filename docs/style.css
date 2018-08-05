@@ -105,7 +105,7 @@ footer{
 }
 
 #menu-content {
-    animation: show-all 0.9s ease-in-out 0.9s forwards;
+    animation: show-all 0.925s ease-in-out 0.925s forwards;
     opacity: 0;
     display: grid;
     grid-template-areas: 
@@ -219,7 +219,7 @@ padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: show-all 1s ease-in-out 1s forwards;
+    animation: show-all 1.1s ease-in-out 1.1s forwards;
     opacity: 0;
 }
 
