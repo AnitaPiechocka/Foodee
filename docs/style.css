@@ -22,6 +22,7 @@ section{
     width: 100%;
     border-bottom: solid 2px #3b3737;
 }
+
 footer{
     height: 100%;
     width: 100%;
@@ -29,6 +30,11 @@ footer{
     color: white;
     text-align: center;
     padding: 30px;
+}
+
+#menu-section {
+    height: auto;
+    padding-bottom: 100px;
 }
 
 #menu-wrapper {
@@ -69,6 +75,13 @@ footer{
     font-size: 44px;
     font-style: italic;
     font-weight: 300;
+}
+
+#menu-header hr {
+    width: 40px;
+    height: 1px;
+    color: orangered;
+    background-color: orangered;
 }
 
 
