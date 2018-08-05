@@ -1,6 +1,16 @@
 var footerY = $('footer').offset().top;
 var aboutY = $('#right').offset().top;
-
+// Home section
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 60) {
+      $('#f1').fadeOut("f1")
+    } else {
+      $('#f1').fadeIn("f1");
+    }
+  });
+});
+//About section
 $("document").ready(function () {
     var animate = function () {
         var scrollY = $(window).scrollTop() + 650;
@@ -28,7 +38,7 @@ $("document").ready(function () {
     });
 });
 
-
+//Footer
 $("document").ready(function () {
     var animate = function () {
         var scrollY = $(window).scrollTop() + 650;

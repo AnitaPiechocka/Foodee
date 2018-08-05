@@ -12,13 +12,51 @@ body {
     padding: 0;
 }
 header{
-    height: 200px;
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
+    height: 600px;
+
 }
 
-.container {
+.header-slider::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.header-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;   
+    background: url("img/bg2.jpg") no-repeat center;
+    background-size: cover;
+    animation: slide 20s infinite 4s;
+    transition: all 0.5s ease-in-out;
+}
+#foodee-header {
+    position: fixed;
+    text-align: center;
+    font-size: 130px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+}
+
+@keyframes slide {
+    25% {background-image: url(img/bg4.jpg)}
+    50% {background-image: url(img/bg3.jpg)}
+    75% {background-image: url(img/bg1.jpg)}
+}
+
+.container{
     width: 100%;
     margin: auto;
 }
@@ -385,6 +423,16 @@ padding-left: 20px;
         "foodbox3"
         "foodbox4"
     }
+    header {
+        height: 400px;
+    }
+    .header-slider::before {
+        height: 400px;
+    }
+
+    #foodee-header {
+        font-size: 60px;
+    }
 }
 
 @media only screen and (max-width: 650px)
@@ -406,6 +454,16 @@ padding-left: 20px;
     }
     .item-price {
         font-size: 16px;
+    }
+    header {
+        height: 300px;
+    }
+    .header-slider::before {
+        height: 300px;
+    }
+
+    #foodee-header {
+        font-size: 45px;
     }
 }
 
