@@ -55,7 +55,12 @@ section{
     /* overflow: hidden; */
     padding-bottom: 10%;
 }
-
+ 
+/*
+.carousel-indicators li:hover{
+    border: 1px solid orangered;
+}
+*/
 
 .carousel-item h3{
     color: #7e5d4e;
