@@ -1,42 +1,85 @@
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', sans-serif;
-    background-color: white;
+}
+header{
+  height: 200px;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.container{
     width: 100%;
-    height: 300px;
+    margin: auto;
+}
+section{
+    height: 700px;
+    width: 100%;
+    border-bottom: solid 2px #3b3737;
 }
 
+.container #quotes-section{
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 250px;
+}
+
+
+.carousel-indicators{
+    margin-top: 6em;
+}
 .carousel-indicators li{
     border-radius: 100%;
-    width: 10px;
-    height: 10px;
+    background-color: #ccc8c4;
+    border: 1px solid  #ccc8c4;
+    width: 14px;
+    height: 14px;
     position: block;
+
 }
 
-.carousel-inner{
-    overflow: hidden;
-}
-    
-.carousel-indicators li:hover{
+
+
+.carousel-indicators .active{
     border: 1px solid orangered;
 }
 
-.carousel-caption h3{
+
+
+
+.carousel-inner{
+    /* overflow: hidden; */
+    padding-bottom: 10%;
+}
+
+
+.carousel-item h3{
     color: #7e5d4e;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: 400;
     text-align: left;
 }
 
-.carousel-caption p{
+.carousel-item p{
     color: #83817f;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     text-align: left;
+    line-height: 350%;
 }
-
-
 .carousel-item.active {
     display:block;
+}
+
+footer{
+    height: 100%;
+    width: 100%;
+    background-color: #3b3737;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
