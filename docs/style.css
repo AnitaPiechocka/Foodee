@@ -20,6 +20,52 @@ section {
     width: 100%;
     border-bottom: solid 2px #3b3737;
 }
+/* Navbar */
+#navbar {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    line-height: 70px;
+    box-sizing: border-box;
+    outline-offset: -5px;
+    outline: 2px solid rgba(177, 177, 177,0.25);
+}
+
+#navbar-left {
+    width: 40%;
+    text-align: right;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+#navbar-center {
+    width: 20%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#navbar-right {
+    width: 40%;
+    text-align: left;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.oversection {
+    color: #f4883f;
+}
 
 /* Header */
 header{
@@ -488,4 +534,6 @@ footer a:hover {
     #about-header h2 {
         font-size: 35px;
     }
+}
+
 }
