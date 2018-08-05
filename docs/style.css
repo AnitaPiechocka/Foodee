@@ -2,6 +2,7 @@ html{
     margin: 0;
     padding: 0;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body{
     font-weight: 300;
     line-height: 2;
 }
+
 header{
   height: 200px;
   background-color: #f1f1f1;
@@ -21,7 +23,6 @@ header{
 .container{
     width: 100%;
     margin: auto;
-    display: flex;
     justify-content: space-between;
     text-align: center;
     z-index: 8;
