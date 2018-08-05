@@ -5,12 +5,13 @@ html{
 body{
     margin: 0;
     padding: 0;
+    font-family: "Merriweather", sans-serif;
 }
 header{
-  height: 200px;
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
+    height: 200px;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
 }
 .container{
     width: 100%;
@@ -28,4 +29,194 @@ footer{
     color: white;
     text-align: center;
     padding: 30px;
+}
+
+#menu-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu-topbar {
+    min-height: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-header
+{
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu-header::before {
+    position: absolute;
+    top: -50;
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    background: url(img/vegan.png), no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 53px;
+    
+}
+
+#menu-header h1 {
+    font-size: 44px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+#menu-content {
+    display: grid;
+    grid-template-areas: 
+    "foodbox1 foodbox2"
+    "foodbox3 foodbox4"
+    
+}
+.foodbox1 {
+    grid-area: foodbox1;
+}
+.foodbox2 {
+    grid-area: foodbox2;
+}
+.foodbox3 {
+    grid-area: foodbox3;
+}
+.foodbox4 {
+    grid-area: foodbox4;
+}
+
+.food-box {
+padding-left: 20px;
+}
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    min-height: 80px;
+    border-bottom: 1px dotted gray;
+    padding-bottom: 10px;
+}
+.food-box-header {
+    margin-top: 50px;
+    position: relative;
+    min-height: 80px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.food-box-header h2 {
+    font-size: 28px;
+    font-style: bold, italic;
+    font-weight: 300;
+}
+
+.drinks::before {
+    position: absolute;
+    top: 5;
+    left: -70;
+    content: "";
+    background: url(img/drink.png), no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+
+}
+.steak::before {
+    position: absolute;
+    top: 10;
+    left: -70;
+    content: "";
+    background: url(img/steak.png), no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 45px;
+
+}
+.item-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.item-image img {
+    width: 100%;
+    max-height: auto;
+    border-radius: 0.3em;
+}
+.item-details {
+    display: block;
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+
+.item-details p {
+    font-size: 14px;
+    font-style: lighter;
+    color: gray;
+}
+.item-details h3 {
+    font-size: 16px;
+    font-weight: 100;
+}
+.item-price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    color: orangered;
+}
+
+#menu-footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#more-food-button {
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-style: bold;
+    background-color: white;
+    color: orangered;
+    height: 20px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s 
+
+
+}
+
+#more-food-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: orangered;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    #menu-content
+    {
+        display: grid;
+        grid-template-areas: 
+        "foodbox1"
+        "foodbox2"
+        "foodbox3"
+        "foodbox4"
+    }
 }
