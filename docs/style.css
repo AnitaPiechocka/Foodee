@@ -1,51 +1,42 @@
-html{
-    margin: 0;
-    padding: 0;
-}
 body{
     margin: 0;
-    padding:0;
-    background-color: grey;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
-}
-
-
-#container{ 
-    background-color: #ffffff;
-    justify-content: center;
-}
-
-
-.carousel-indicators{
-    color: transparent;
+    background-color: white;
+    width: 100%;
+    height: 300px;
 }
 
 .carousel-indicators li{
     border-radius: 100%;
-    border: 1px solid orangered;
+    width: 10px;
+    height: 10px;
     position: block;
-    inline-size: 1%;
 }
-
 
 .carousel-inner{
-    width: 75%;
-    margin: 50px auto;
-    border: 5px solid rgba(127, 150, 199, 0.275);
-    height: 300px;
+    overflow: hidden;
 }
-
+    
+.carousel-indicators li:hover{
+    border: 1px solid orangered;
+}
 
 .carousel-caption h3{
     color: #7e5d4e;
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 400;
+    text-align: left;
 }
 
 .carousel-caption p{
     color: #83817f;
     font-size: 16px;
     font-weight: 400;
+    text-align: left;
 }
 
 
+.carousel-item.active {
+    display:block;
+}
