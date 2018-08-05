@@ -136,12 +136,9 @@ footer a:hover {
     font-size: 30px;
 }
 
-#social a {
-    padding: 20px;
-}
-
 #social i {
     position: relative;
     opacity: 0;
+    padding: 20px;
 }
 
