@@ -29,14 +29,14 @@ header{
     display: flex;
 }
 
+
+
 .one-of-two {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 700px;
     position: relative;
 }
 
@@ -51,7 +51,7 @@ header{
 #about-header h2 {
     font-family: 'Merienda', cursive;
     font-size: 48px;
-    margin: -30px 0 20px 0;
+    margin: 30px 0 20px 0;
     color: #f2f2f2;
     opacity: 0;
     position: relative;
@@ -78,7 +78,7 @@ header{
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin-top: 20px;
+    margin: 20px 0;
     cursor: pointer;
     opacity: 0;
     position: relative;
@@ -89,7 +89,6 @@ header{
 }
 
 section {
-    height: 700px;
     width: 100%;
     border-bottom: solid 2px #3b3737;
 }
@@ -126,9 +125,9 @@ footer a:hover {
     font-family: 'Merienda', cursive;
     float: left;
     color: #f2f2f2;
-    font-size: 75px;
-    line-height: 60px;
-    padding: 4px 10px 0 10px;
+    font-size: 60px;
+    line-height: 30px;
+    padding: 0 10px;
 }
 
 #copyright {
@@ -407,5 +406,29 @@ padding-left: 20px;
     }
     .item-price {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .one-of-two {
+        width: 100%;
+    }
+
+    #about-img {
+        width: 100%;
+        height: auto;
+    }
+
+    #about-content {
+        font-size: 16px;
+        padding: 0 50px;
+    }
+
+    #about-header h2 {
+        font-size: 35px;
     }
 }

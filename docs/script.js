@@ -1,9 +1,7 @@
 var footerY = $('footer').offset().top;
-var aboutY = $('#about-section').offset().top;
+var aboutY = $('#right').offset().top;
 
 $("document").ready(function () {
-    console.log("scroll " + scrollY);
-    console.log("about " + aboutY);
     var animate = function () {
         var scrollY = $(window).scrollTop() + 650;
         console.log("scroll " + scrollY);
@@ -32,8 +30,6 @@ $("document").ready(function () {
 
 
 $("document").ready(function () {
-    console.log("scroll " + scrollY);
-    console.log("footer " + footerY);
     var animate = function () {
         var scrollY = $(window).scrollTop() + 650;
         console.log("scroll " + scrollY);
