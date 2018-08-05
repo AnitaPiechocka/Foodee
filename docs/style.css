@@ -1,3 +1,7 @@
+:root {
+    --orange: #fb6e14;
+}
+
 html{
     margin: 0;
     padding: 0;
@@ -5,7 +9,6 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: "Merriweather", sans-serif;
 }
 header{
     height: 200px;
@@ -51,6 +54,7 @@ footer{
 }
 #menu-header
 {
+    width:70%;
     margin-top: 100px;
     position: relative;
     text-align: center;
@@ -58,32 +62,35 @@ footer{
     margin-right: auto;
 }
 
-#menu-header::before {
-    position: absolute;
-    top: -50;
+#menu-header-image {
     margin-left: auto;
     margin-right: auto;
-    content: "";
-    background: url(img/vegan.png), no-repeat;
-    background-size: cover;
-    width: 64px;
-    height: 53px;
+   max-width: 64px;
+    max-height: 53px;
     
 }
 
 #menu-header h1 {
-    font-size: 44px;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
     font-style: italic;
-    font-weight: 300;
 }
 
 #menu-header hr {
     width: 40px;
-    height: 1px;
-    color: orangered;
-    background-color: orangered;
+    height: 0.8px;
+    color:  var(--orange);
+    background-color:var(--orange);
 }
 
+#menu-header p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(157, 143, 143);
+    
+}
 
 #menu-content {
     display: grid;
@@ -112,8 +119,9 @@ padding-left: 20px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     min-height: 80px;
-    border-bottom: 1px dotted gray;
+    border-bottom: 1px dotted #b6ae9f;
     padding-bottom: 10px;
+    font-family: "Merriweather", serif;
 }
 .food-box-header {
     margin-top: 50px;
@@ -125,15 +133,16 @@ padding-left: 20px;
     align-items: center;
 }
 .food-box-header h2 {
-    font-size: 28px;
-    font-style: bold, italic;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-style: italic;
     font-weight: 300;
 }
 
 .drinks::before {
     position: absolute;
     top: 5;
-    left: -70;
+    left: -60;
     content: "";
     background: url(img/drink.png), no-repeat;
     background-size: cover;
@@ -143,7 +152,7 @@ padding-left: 20px;
 }
 .steak::before {
     position: absolute;
-    top: 10;
+    top: 20;
     left: -70;
     content: "";
     background: url(img/steak.png), no-repeat;
@@ -163,6 +172,8 @@ padding-left: 20px;
     width: 100%;
     max-height: auto;
     border-radius: 0.3em;
+    min-height: 60px;
+    min-width: 80px;
 }
 .item-details {
     display: block;
@@ -172,12 +183,12 @@ padding-left: 20px;
 
 .item-details p {
     font-size: 14px;
-    font-style: lighter;
-    color: gray;
+    font-weight: 300;
+    color: #6a6560;
 }
 .item-details h3 {
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
 }
 .item-price {
     display: flex;
@@ -185,7 +196,7 @@ padding-left: 20px;
     align-items: center;
     font-size: 20px;
     padding: 10px;
-    color: orangered;
+    color: var(--orange);
 }
 
 #menu-footer {
@@ -196,21 +207,22 @@ padding-left: 20px;
 }
 
 #more-food-button {
-    border: 2px solid orangered;
+    border: 2px solid var(--orange);
     border-radius: 5px;
     padding: 10px 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 12px;
     font-style: bold;
+    font-weight: 700;
     background-color: white;
-    color: orangered;
+    color: var(--orange);
     height: 20px;
     width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s 
+    transition: all 0.3s ease-in-out;
 
 
 }
@@ -218,7 +230,7 @@ padding-left: 20px;
 #more-food-button:hover {
     cursor: pointer;
     color: white;
-    background-color: orangered;
+    background-color: var(--orange);
 }
 
 @media only screen and (max-width: 1000px)
