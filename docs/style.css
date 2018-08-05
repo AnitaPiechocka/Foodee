@@ -156,14 +156,16 @@ footer a:hover {
         width: 100%;
     }
 
-    img {
+    #about-img {
         width: 100%;
         height: auto;
     }
 
     #about-content {
         font-size: 16px;
+        padding: 0 50px;
     }
+
     #about-header h2 {
         font-size: 35px;
     }
