@@ -27,13 +27,15 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.8;
     animation: slide 20s infinite 4s;
     transition: all 0.5s ease-in-out;
 }
 #foodee-header {
+    position: fixed;
+    left: auto;
+    top: auto;
     text-align: center;
-    font-size: 120px;
+    font-size: 130px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-style: italic;
