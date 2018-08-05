@@ -5,6 +5,11 @@ html{
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Icomoon', serif;
+    font-weight: 300;
+    line-height: 2;
 }
 header{
   height: 200px;
@@ -12,9 +17,18 @@ header{
   padding: 30px;
   text-align: center;
 }
+
 .container{
     width: 100%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 8;
+    padding-top: 300px;
+}
+
+    
 }
 section{
     height: 700px;
@@ -80,15 +94,6 @@ section{
 
 
 
-body, html {
-    width: 100%;
-    height: 100%;
-    font-family: 'Icomoon', serif;
-    font-weight: 300;
-    line-height: 2;
-}
-
-
 #bg{
     height: 1000px;
     background: url("images/2.jpg");
@@ -100,14 +105,6 @@ body, html {
     justify-content: center;
 }
 
-
-.container{
-    width: auto;
-    justify-content: space-between;
-    text-align: center;
-    z-index: 8;
-    padding-top: 300px;
-}
 
 
 .text{
@@ -135,9 +132,6 @@ p{
     padding: 10px;
 }
 
-.container{
-    display: flex;
-}
 
 .type{
     margin: 15px;
