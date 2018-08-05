@@ -103,6 +103,7 @@ section{
 .features_container{
     justify-content: space-between;
     text-align: center;
+    display: flex;
     z-index: 8;
     padding-top: 300px;
 }
