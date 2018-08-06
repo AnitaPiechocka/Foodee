@@ -107,7 +107,7 @@ header {
 }
 
 #foodee-header {
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: 130px;
     font-family: 'Playfair Display', serif;
