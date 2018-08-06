@@ -46,19 +46,19 @@ $(document).ready(function () {
 
     $("#about").click(function () {
         $('html, body').animate({
-            scrollTop: $("#about-section").offset().top-60
+            scrollTop: $("#about-section").offset().top-70
         }, 500);
     });
 
     $("#menu").click(function () {
         $('html, body').animate({
-            scrollTop: $("#menu-section").offset().top-60
+            scrollTop: $("#menu-section").offset().top-70
         }, 500);
     });
 
     $("#reservation").click(function () {
         $('html, body').animate({
-            scrollTop: $("#reservation-section").offset().top-60
+            scrollTop: $("#reservation-section").offset().top-70
         }, 500);
     });
 });
