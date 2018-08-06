@@ -77,6 +77,10 @@ header {
     height: 600px;
 }
 
+#f1 {
+    margin: 0;
+}
+
 .header-slider::before {
     position: absolute;
     left: 0;
