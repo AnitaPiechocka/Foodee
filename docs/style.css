@@ -40,7 +40,7 @@ header{
     transition: slide 0.5s ease-in-out;
 }
 #foodee-header {
-    position: fixed;
+    position: absolute;
     text-align: center;
     font-size: 130px;
     font-family: 'Playfair Display', serif;
@@ -50,7 +50,7 @@ header{
 }
 #f1 {
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto; 
 }
 
 @keyframes slide {
