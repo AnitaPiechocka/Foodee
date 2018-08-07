@@ -14,6 +14,9 @@
           rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
     <link href="style.css" rel="stylesheet" type="text/css">
   
     <title>Foodie - II Project</title>
@@ -427,29 +430,72 @@
             </div>
         </section>
         <section id="reservation-section">
-            <p>reservation</p>
+            <div class="layout">
+                <div class="logo">
+                    <div class="item" style="height:50px;">
+                        <i class="icon-coffee"></i>
+                    </div>
+                    <h1>Reserve a Table</h1>
+                        <hr></hr>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and <br></br>Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="contact">
+                        <h2>Contact Info</h2>
+                        <br></br>
+                    <div class="nav-item">
+                            <p1><i class="icon-home-outline"></i>5555 Love Paradise 56 New Clity 5655,</p1><br></br><p2>Excel Tower United Kingdom </p2>
+                            <br></br>
+                            <p3><i class="icon-phone"></i>(123) 465-6789</p3>
+                            <br></br>
+                            <p4><i class="icon-mail"></i>info@freehtml5.co</p4>
+                            <br></br>
+                            <p5><a href="https://freehtml5.co/" target="_blank "><i class= "icon-globe "></i>freehtml5.co</a></p5>
+        	        </div>
+        	    </div>
+                <div class="reservation ">
+                    <div id="form ">
+                        <h3>Reservation Form</h3> 
+                            <form> 
+                                <input class="input" type="text " placeholder="Name " onfocus="this.placeholder='' " onblur="this.placeholder='Name' ">
+                                <input class="input" type="text " placeholder="Email " onfocus="this.placeholder='' "onblur="this.placeholder='Email' ">
+                                <select class="input" id="select " placeholder="Select an Occation " onfocus="this.placeholder='' "onblur="this.placeholder='Select an Occation' "> 
+                                    <option value="a ">Select an Occation</option> 
+                                    <option value="x ">Wedding Ceremony</option> 
+                                    <option value="y ">Birthday</option> 
+                                    <option value="z ">Others</option> 
+                                </select> 
+                                <div class='input-group date' id='datetimepicker1' style=" ">
+                                        <input type='datetime' placeholder="Date&Time " onfocus="this.placeholder='' "onblur="this.placeholder='Date&Time' " class="form-control ">
+                                        <span class="input-group-addon " >  
+                                            <span class="glyphicon glyphicon-calendar " ></span>
+                                        </span>
+                                </div>
+                                <textarea name="Message " rows="2 " cols="3 "placeholder="Message " onfocus="this.placeholder='' "
+                                    onblur="this.placeholder='Message' "></textarea>
+                                <button>Send Message</button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
         </section>
-    </div>
-    
-</div>
-
-<footer>
-    <div class="page-container">
-        <div class="footer-content" id="copyright">
-            © 2018 <a href="https://www.facebook.com/groups/198036357531232/" target="_blank">CodersCamp Wroclaw</a>
-            <br/>
-            Designed by Anita's Team :)
-        </div>
-        <div class="footer-content" id="link">
-            <a href="#" id="go-to-top">Go To Top</a>
-        </div>
-        <div class="footer-content" id="social">
-            <a href="https://www.facebook.com" target="_blank"> <i class="fab fa-facebook-f" id="fb"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" id="tw"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" id="ig"></i></a>
-        </div>
-    </div>
-</footer>
+        
+        <footer>
+            <div class="page-container">
+                <div class="footer-content" id="copyright">
+                    © 2018 <a href="https://www.facebook.com/groups/198036357531232/" target="_blank">CodersCamp Wroclaw</a>
+                    <br/>
+                    Designed by Anita's Team :)
+                </div>
+                <div class="footer-content" id="link">
+                    <a href="#" id="go-to-top">Go To Top</a>
+                </div>
+                <div class="footer-content" id="social">
+                    <a href="https://www.facebook.com" target="_blank"> <i class="fab fa-facebook-f" id="fb"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" id="tw"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" id="ig"></i></a>
+                </div>
+            </div>
+        </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
@@ -457,6 +503,10 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
 </body>
 
