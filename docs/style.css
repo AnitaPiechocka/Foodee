@@ -11,6 +11,11 @@ html {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Icomoon', serif;
+    font-weight: 300;
+    line-height: 2;
 }
 
 .container {
@@ -97,6 +102,111 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
+
+.container #quotes-section{
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 250px;
+}
+
+.carousel-indicators{
+    margin-top: 6em;
+}
+.carousel-indicators li{
+    border-radius: 100%;
+    background-color: #ccc8c4;
+    border: 1px solid  #ccc8c4;
+    width: 14px;
+    height: 14px;
+    position: block;
+
+}
+
+.carousel-indicators .active{
+    border: 1px solid orangered;
+}
+
+.carousel-inner{
+    padding-bottom: 10%;
+}
+
+.carousel-item h3{
+    color: #7e5d4e;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.carousel-item p{
+    color: #83817f;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 350%;
+}
+.carousel-item.active {
+    display:block;
+}
+
+#bg{
+    width: 100%;
+    height: 100%;
+    background: url("images/2.jpg");
+    position: static;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.features_container{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    z-index: 8;
+    padding: 10%;
+}
+
+.text{
+    color: #fff;
+    text-align: center;
+}
+
+h3{
+    font-size: 40px;
+    font-style: italic;
+}
+
+p{
+    font-family: 'Merriweather';
+    font-size: 18px; 
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 1px solid rgb(255, 255, 255, 0.6);
+    padding: 10px;
+}
+.parallax{
+    height: 100%;
+}
+.type{
+    margin: 15px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+footer{
     height: 100%;
     background-color: #1f1f1f;
     overflow: hidden;
