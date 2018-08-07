@@ -1,8 +1,4 @@
-window.onscroll = function () {
-    $('.parallax-img').css((
-        top: "-" + (window.scrollY / 3) + "px"
-    ));
-};
+
 var footerY = $('footer').offset().top;
 var aboutY = $('#right').offset().top;
 //Navbar
@@ -155,3 +151,9 @@ $("document").ready(function () {
     });
 });
 
+// Parallax effect
+window.onscroll = function () {
+  $('.parallax-img').css((
+    top: "-" + (window.scrollY / 3) + "px"
+  ));
+};
