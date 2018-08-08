@@ -123,7 +123,7 @@ header {
     color: white;
 }
 #foodee-header h1{
-    font-size: 130px;
+    font-size: 200px;
 }
 
 @keyframes slide {
@@ -548,6 +548,11 @@ header {
     color: var(--orange)
 }
 /* Reservation section */
+#reservation-section{
+    color:antiquewhite;
+    background-image: url("img/about-background.jpeg");
+   
+}
 .layout {
 	display:grid;
 	grid-template-columns: 1fr 1fr;
@@ -567,14 +572,14 @@ header {
 }
 .contact {
 	padding-left:150px;
-	padding-right:50px;
-	
+    padding-right:50px;
+    font-size: 20px;
+    margin-left: 10%;
 }
 .reservation {
 	grid-area:reservation;
-	width:550px;
-	padding-left:50px;
-	
+	width:100%;
+	padding-left:50px;	
 }
 .reservation-section p{
   font-family: "Merriweather";
@@ -583,29 +588,12 @@ header {
   font-size:16px;
   line-height:10px;
   letter-spacing:2px;
-  color:#696969;
+  color:white;
 }
-p1,p3,p4{
-	font-size:18px;	
-	font-family: 'Merriweather', serif;
-	font-style: normal;
-	font-weight: 200;
+.nav-item p{
+    margin-bottom: 5%;
 }
-p2{
-	font-size:18px;	
-	padding-left:45px;
-	line-height:2px;
-	font-family: 'Merriweather', serif;
-	font-style: normal;
-	font-weight: 200;	
-}
-p5{
-	font-size:18px;	
-	font-family: 'Merriweather', serif;
-	font-style: normal;
-	font-weight: 200;
-	
-}
+
 i{
 	padding-right:20px;
 }
@@ -618,7 +606,7 @@ i{
 }
 .reservation-section h2{
 	text-align:left;
-	margin-bottom:10px;
+	margin-bottom:15%;
 	font-family: 'Playfair Display', serif;
 	font-style:italic;
 	font-weight: 200;
@@ -755,7 +743,7 @@ a:visited {
 	color:#FF4500;
 }
 a:hover {
-	color:#cc7a00;
+	 color: #ea4c10;
 }
 input::-webkit-input-placeholder
 {
@@ -966,12 +954,12 @@ footer a:hover {
         padding-left:150px;
         padding-right:50px;
         padding-top: 20px;
+        margin-left: 0;
     }
     .reservation {
         grid-area:reservation;
-        /* width:550px; */
-        margin: 0 auto;
-        
+        width:95%;
+        padding-left:150px;    
     }
 }
 
